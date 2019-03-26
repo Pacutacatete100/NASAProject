@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <title>Importance of NASA</title>
 </head>
-<body background="res/pixil-frame-0.png">
+<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+
+
+<style>
+    .imageBorder{
+        width: 600px;
+        height: 500px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-40%, -26%);
+        border: 10px solid transparent;
+        border-image: linear-gradient(45deg, #e54ed0, #44008b, #00076f);
+        border-image-slice: 1;
+    }
+    body{
+        font-family: 'Dosis';font-size: 20px;
+    }
+</style>
+<body background="res/bg.jpg">
     <h1 style="color: white;">Exploration and Imagination</h1>
     <a href="index.html">Home</a>
     <a href="page2.html">Improving Iife on Earth</a>
@@ -15,8 +34,15 @@
     <p style="color: white;">Although less concrete, this last reason is perhaps the most important.
         Listen to the audio file below to listen.</p>
 
+    <div class="imageBorder">
+        <img src="res/mostimportant.jpg"
+             style="width: 600px; height: 500px; position: absolute; left: 50%; right: 50%; top: 50%; margin: -250px 0 0 -300px;">
+    </div>
+
+
     <audio controls>
-        <source src="res/ExlporationandImagination.mp3" >
+        <source src="res/ExlporationandImagination.mp3">
     </audio>
+
 </body>
 </html>
