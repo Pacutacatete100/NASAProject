@@ -9,6 +9,29 @@
     body {
         font-family: 'Dosis';font-size: 20px;
     }
+    a:link, a:visited{
+        background-color: #6f14a8;
+        color: white;
+        font-size: 22px;
+        padding: 25px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 12px;
+        margin-left: 25px;
+        margin-right: 30px;
+    }
+    .imageBorder{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -19%);
+        border: 10px solid transparent;
+        border-image: linear-gradient(45deg, #e54ed0, #44008b, #00076f);
+        border-image-slice: 1;
+    }
 </style>
 <body background="res/bg.jpg">
     <h1 style="color: white;">Economy</h1>
@@ -16,17 +39,27 @@
     <a href="page2.html">Improving Iife on Earth</a>
     <a href="page3.html">Extinction Protection</a>
     <a href="page4.html">Technology Spinoffs</a>
+    <a href="page5.html">Economy</a>
     <a href="page6.html">Exploration and Imagination</a>
 
-    <p style="color: white;">NASA doesnt use all of the money they get on their projects.
-        Most of that money goes into the economy of the country,
-        building it up and making it stronger in exchange for the amazing things they already make</p>
 
-    <img src="res/nasapeople.jpg" width="400">
+    <div align="center">
+        <p style="color: white;">NASA doesnt use all of the money they get on their projects.
+            Most of that money goes into the economy of the country,
+            building it up and making it stronger in exchange for the amazing things they already make</p>
+    </div>
 
-    <audio controls>
-        <source src="res/Economy.mp3">
-    </audio>
+    <div class="imageBorder">
+        <img src="res/nasapeople.jpg" style="width: 400px">
+    </div>
+
+    <div style="position: absolute; transform: translate(230%, 710%)">
+        <audio controls>
+            <source src="res/Economy.mp3">
+        </audio>
+    </div>
+
+
 
 </body>
 </html>

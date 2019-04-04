@@ -9,20 +9,53 @@
     body {
         font-family: 'Dosis';font-size: 20px;
     }
+    a:link, a:visited{
+        background-color: #6f14a8;
+        color: white;
+        font-size: 22px;
+        padding: 25px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 12px;
+        margin-left: 25px;
+        margin-right: 30px;
+    }
+    .imageBorder{
+        width: 500px;
+        height: 360px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -19%);
+        border: 10px solid transparent;
+        border-image: linear-gradient(45deg, #e54ed0, #44008b, #00076f);
+        border-image-slice: 1;
+    }
 </style>
 <body background="res/bg.jpg">
     <h1 style="color: white;">Technology Spinoffs</h1>
     <a href="index.html">Home</a>
     <a href="page2.html">Improving Iife on Earth</a>
     <a href="page3.html">Extinction Protection</a>
+    <a href="page4.html">Technology Spinoffs</a>
     <a href="page5.html">Economy</a>
     <a href="page6.html">Exploration and Imagination</a>
 
-    <p style="color: white;">Making and inventing technology for NASA satellites or other projects are a perfect breeding ground for new technology we can sue every day here on earth.
-    Click on the audio file below to listen about some of the things that we use every day that came from NASA.</p>
+    <div align="center">
+        <p style="color: white;">Making and inventing technology for NASA satellites or other projects are a perfect breeding ground for new technology we can sue every day here on earth.<br>
+            Click on the audio file below to listen about some of the things that we use every day that came from NASA.</p>
+    </div>
 
-    <audio controls>
-        <source src="res/Home%203.m4a">
-    </audio>
+    <div style="position: absolute; transform: translate(230%, 710%)">
+        <audio controls>
+            <source src="res/Home%203.m4a">
+        </audio>
+    </div>
+
+
+    <div class="imageBorder">
+        <img src="res/pet-mri.jpg" style="width: 500px">
+    </div>
 </body>
 </html>
